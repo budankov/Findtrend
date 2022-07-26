@@ -1,0 +1,43 @@
+.main-nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.site-nav {
+  display: flex;
+
+  // .site-nav__item
+  &__item {
+    @extend %list;
+    
+    padding-top: 40px;
+    padding-bottom: 41px;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  // .site-nav__link
+  &__link {
+    @extend %link;
+    color: $text-color-white;
+  }
+}
+
+.btn-nav {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  @extend %link;
+  color: $text-color-white;
+}
+
+.button--white {
+  margin-left: 40px;
+  padding: 12px 32px;
+  background: $bcg-color-white;
+}

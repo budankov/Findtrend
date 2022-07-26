@@ -1,0 +1,18 @@
+// Utils
+@import "./utils/variables";
+@import "./utils/placeholders";
+
+// Base
+@import "./base/common";
+@import "./base/container";
+@import "./base/visually-hidden";
+
+// Components
+@import "./components/page-header";
+@import "./components/mobile-menu";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/button";
+@import "./components/social-networks";
+@import "./components/footer";
+@import "./components/modal";

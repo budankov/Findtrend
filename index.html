@@ -4,33 +4,272 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-		<link href="http://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
-
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-
     <title>Findtrend</title>
+
+    <!-- Favico -->
+    <link rel="shortcut icon" href="Favico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:ital@1&family=Rubik:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-		<section class="section-top">
-			<div class="section-top__container">
-				<h1 class="section-top__title">Minimize your tabs. Find the trends!</h1>
-				<p class="section-top__info">Don’t let your computer memories consumes all of those browser tabs. Findtrend  let you gathers all of your favorite website into one place.</p>
-				<div class="section-top__btn">
-					<button class="btn" type="button">Get Started 🔥</button>
-				</div>
-				<div class="section-top__btn-socmed">
-					<div class="btn-socmed-1">
-						<img class="" src="" alt="">
-						<p></p>
-						<img src="" alt="">
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Header -->
+    <header class="page-header">
+      <div class="container-big">
+        <nav class="main-nav">
+          <a class="logo" href="./index.html"
+            ><svg class="logo__icon" width="40" height="40">
+              <use xlink:href="./images/icons/logo.svg"></use>
+            </svg>
+            Findtrend</a
+          >
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">About</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">How it work</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Pricing</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Solution</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Features</a>
+            </li>
+          </ul>
+          <div class="btn-nav">
+            <a class="login" href="">Login</a>
+            <button class="button button--white" type="button">Register</button>
+          </div>
+        </nav>
+        <!-- Button Burger-menu -->
+        <button class="mobile-menu__button" type="button" aria-expanded="false" data-menu-button>
+          <svg
+            class="mobile-menu__icons"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-cross" xlink:href="./images/icons/sprite.svg#cross"></use>
+            <use class="icon-menu" xlink:href="./images/icons/sprite.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Navigation Burger-menu -->
+      <div class="mobile-menu" data-menu>
+        <ul class="menu-pages">
+          <li class="menu-pages__item">
+            <a class="menu-pages__link link--current" href="./index.html">Студия</a>
+          </li>
+          <li class="menu-pages__item">
+            <a class="menu-pages__link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="menu-pages__item">
+            <a class="menu-pages__link" href="./index.html">Контакты</a>
+          </li>
+        </ul>
+        <div class="menu-container">
+          <ul class="menu-contacts">
+            <li class="menu-contacts__item">
+              <a class="menu-contacts__link link--current" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu-contacts__item">
+              <a class="menu-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="menu-socials">
+            <li class="menu-socials__item">
+              <a class="menu-socials__link" href="" rel="noreferrer noopener">Instagram</a>
+            </li>
+            <li class="menu-socials__item">
+              <a class="menu-socials__link" href="" rel="noreferrer noopener">Twitter</a>
+            </li>
+            <li class="menu-socials__item">
+              <a class="menu-socials__link" href="" rel="noreferrer noopener">Facebook</a>
+            </li>
+            <li class="menu-socials__item">
+              <a class="menu-socials__link" href="" rel="noreferrer noopener">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Main block -->
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container container-hero">
+          <div class="hero-content-wrapper">
+            <h1 class="hero-title">Minimize your tabs. Find the trends!</h1>
+            <p class="hero-text">
+              Don’t let your computer memories consumes all of those browser tabs. Findtrend let you
+              gathers all of your favorite website into one place.
+            </p>
+            <button class="button button-green" type="button" data-modal-open>
+              Get Started 🔥
+            </button>
+          </div>
+          <div class="btn-hero-socmed">
+            <ul class="hero-img">
+              <li class="hero-img__item hero-img__item--1">
+                <img class="hero-image" src="./images/main-page/hero/tab1.jpg" alt="Tab" />
+              </li>
+              <li class="hero-img__item hero-img__item--2">
+                <img class="hero-image" src="./images/main-page/hero/tab2.jpg" alt="Tab" />
+              </li>
+              <li class="hero-img__item hero-img__item--3">
+                <img class="hero-image" src="./images/main-page/hero/tab3.jpg" alt="Tab" />
+              </li>
+              <li class="hero-img__item hero-img__item--4">
+                <img class="hero-image" src="./images/main-page/hero/tab4.jpg" alt="Tab" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="company-address">
+          <!--Address-->
+          <address class="company-address__container"></address>
+        </div>
+        <!-- Socials -->
+        <div class="company-socials company-socials--footer">
+          <ul class="socials">
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--grey"
+                href=""
+                aria-label="Перейти в Instagram компании"
+              >
+                <svg class="socials__icon socials__icon--white" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--grey"
+                href=""
+                aria-label="Перейти в Twitter компании"
+              >
+                <svg class="socials__icon socials__icon--white" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--grey"
+                href=""
+                aria-label="Перейти в Facebook компании"
+              >
+                <svg class="socials__icon socials__icon--white" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--grey"
+                href=""
+                aria-label="Перейти в Linkedin компании"
+              >
+                <svg class="socials__icon socials__icon--white" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <!-- Modal Windows -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn-close" data-modal-close>
+          <svg class="modal__icon-close" width="18" height="18">
+            <use href="./images/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <!-- Modal Form -->
+        <form class="form js-speaker-form">
+          <b class="form__heading">Оставьте свои данные, мы вам перезвоним</b>
+          <label class="form__field" for="name">
+            <span class="form__label">Имя</span>
+            <svg class="form__icon" width="18" height="18">
+              <use href="./images/icons/sprite.svg#person"></use>
+            </svg>
+            <input class="form__input" type="text" name="name" autofocus />
+          </label>
+          <label class="form__field" for="tel">
+            <span class="form__label">Телефон</span>
+            <svg class="form__icon" width="18" height="18">
+              <use href="./images/icons/sprite.svg#phone"></use>
+            </svg>
+            <input class="form__input" type="tel" name="tel" />
+          </label>
+          <label class="form__field" for="mail">
+            <span class="form__label">Почта</span>
+            <svg class="form__icon" width="18" height="18">
+              <use href="./images/icons/sprite.svg#email"></use>
+            </svg>
+            <input class="form__input" type="email" name="mail" />
+          </label>
+          <label class="form__field form__field--comment" for="comment">
+            <span class="form__label">Комментарий</span>
+            <textarea
+              class="form__textarea"
+              type="comment"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="form__field form__field--policy">
+            <input class="form__checkbox visually-hidden" type="checkbox" name="policy" />
+            <svg class="form__icon--checkbox" width="16" height="15">
+              <use href="./images/icons/sprite.svg#check"></use>
+            </svg>
+            <span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="form__link" href="#">Условия договора</a>
+            </span>
+          </label>
+          <button class="button form__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
