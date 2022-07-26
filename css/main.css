@@ -105,9 +105,6 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -213,12 +210,19 @@ ol {
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   color: #FFFFFF;
 }
 
 .logo__icon {
   fill: #A8FF35;
+  margin-right: 10px;
 }
 
 .container-hero {
