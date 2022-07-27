@@ -128,8 +128,44 @@
               Don’t let your computer memories consumes all of those browser tabs. Findtrend let you
               gathers all of your favorite website into one place.
             </p>
-            <button class="button button-green" type="button" data-modal-open>
+            <svg class="gooey" xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <defs>
+                <filter id="gooey">
+                  <!-- in="sourceGraphic" -->
+                  <fegaussianblur
+                    in="SourceGraphic"
+                    stdDeviation="6"
+                    result="blur"
+                  ></fegaussianblur>
+                  <fecolormatrix
+                    in="blur"
+                    type="matrix"
+                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                    result="highContrastGraphic"
+                  ></fecolormatrix>
+                  <fecomposite
+                    in="SourceGraphic"
+                    in2="highContrastGraphic"
+                    operator="atop"
+                  ></fecomposite>
+                </filter>
+              </defs>
+            </svg>
+
+            <button id="gooey-button" class="button" type="button" data-modal-open>
               Get Started 🔥
+              <span class="bubbles">
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+                <span class="bubble"></span>
+              </span>
             </button>
           </div>
           <div class="btn-hero-socmed">
