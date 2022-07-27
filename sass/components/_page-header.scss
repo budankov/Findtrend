@@ -23,6 +23,25 @@
     @extend %link;
     color: $text-color-white;
     transition: color $transition-duration;
+    position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 
   &:focus, &:hover {
       color: $bcg-color-green;
@@ -39,8 +58,28 @@
   @extend %link;
   color: $text-color-white;
   transition: color $transition-duration;
+  position: relative;
 
-  &:focus,  &:hover {
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  &:focus,
+  &:hover {
     color: $bcg-color-green;
   }
 }
