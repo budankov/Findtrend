@@ -39,4 +39,8 @@
   margin-left: 40px;
   padding: 12px 32px;
   background: $bcg-color-white;
+
+  &:focus, &:hover {
+    background-color: $bcg-color-green;
+  }
 }

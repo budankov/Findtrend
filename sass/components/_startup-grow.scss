@@ -1,0 +1,38 @@
+.startup-grow {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: $bcg-color-white;
+
+  // .startup-grow__title
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76px;  
+    text-align: center;
+    color: $text-color-black;
+    margin-bottom: 80px;
+  }
+
+  // .startup-grow__list
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  // .startup-grow__item
+  &__item {
+    width: 266px;
+    height: 120px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5F5F5;
+    border-radius: 8px;
+    transition: transform $transition-duration;
+
+    &:hover, &:focus {
+      transform: scale(1.2);
+    }
+  }
+}

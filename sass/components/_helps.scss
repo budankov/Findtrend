@@ -1,0 +1,19 @@
+.helps {
+  background: $bcg-color-white;
+  padding-top: 140px;
+  padding-bottom: 140px;
+
+  // .helps__text
+  &__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.19;
+    color: $text-color-black;
+  }
+
+  // .helps__text--grey
+  &__text--grey {
+    color: $helps-text-color;
+  }
+}
