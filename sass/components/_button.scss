@@ -9,11 +9,6 @@
   cursor: pointer;
   transition: background-color $transition-duration;
 
-  &:focus,
-  &:hover {
-    // background-color: $button-hover-color;
-  }
-
   // Чисто от себя декоративный эффект нажатия
   &:active {
     opacity: 0.8;

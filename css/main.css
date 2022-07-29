@@ -1,4 +1,4 @@
-.socials, .hero-img__item, .site-nav__item {
+.socials, .card-set__list, .card-set__item, .hero-img__item, .site-nav__item {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -680,6 +680,102 @@ ol {
 }
 .button-black:focus, .button-black:hover {
   background-color: #A8FF35;
+}
+
+.best-deal {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+.best-deal__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.19;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+}
+.card-set__item {
+  background-color: #FAFAFA;
+  border-radius: 16px;
+  padding: 32px 32px 24px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card-set__title {
+  font-size: 36px;
+  line-height: 100%;
+  color: #000000;
+  padding-bottom: 8px;
+}
+.card-set__text {
+  position: relative;
+  font-size: 18px;
+  line-height: 100%;
+  color: #000000;
+  padding-bottom: 32px;
+}
+.card-set__text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  opacity: 0.2;
+  background-color: #000000;
+}
+.card-set__price {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  color: #000000;
+  margin-top: 32px;
+}
+.card-set__months {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #000000;
+}
+.card-set__list {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.card-set__privilege {
+  color: #000000;
+}
+.card-set__privilege:not(:last-child) {
+  padding-bottom: 24px;
+}
+.card-set__button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #000000;
+  background: #A8FF35;
+  border: none;
+  border-radius: 29px;
+  padding: 17px 79px;
 }
 
 .button {
