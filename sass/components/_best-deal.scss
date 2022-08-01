@@ -13,6 +13,105 @@
   }
 }
 
+.best-deal {
+
+  // .best-deal_subscription
+  &_subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  // .best-deal_monthly
+  &_monthly {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $text-color-white;
+    margin-right: 24px;
+  }
+
+  // .best-deal_yearly
+  &_yearly {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $yearly-text-color;
+    margin-left: 24px;
+  }
+
+  // .best-deal_yearly--subtitles
+  &_yearly--subtitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: $text-color-white;
+    transform: rotate(6deg);
+    margin-left: 24px;
+  }
+
+  &_yearly--arrow {
+    fill: $bcg-color-white;
+    transform: rotate(107.94deg);
+  }
+}
+
+//Toggle
+.best-deal__input {
+  display: block;
+}
+
+.best-deal__input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.best-deal__label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 104px;
+  height: 52px;
+  background: $bcg-color-white;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 36px;
+    height: 36px;
+    background: $bcg-color-green;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+
+  &:active:after {
+    width: 60px;
+  }
+}
+
+.best-deal__input:checked+.best-deal__label {
+  background: $bcg-color-white;
+}
+
+.best-deal__input:checked+.best-deal__label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -28,6 +127,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &:focus,
+    &:hover {
+      background-color: $bcg-color-green;
+    }
   }
 
   // .card-set__features
@@ -106,5 +210,11 @@
     border: none;
     border-radius: 29px;
     padding: 17px 79px;
+
+    &:focus,
+    &:hover {
+      background-color: $bcg-color-black;
+      color: $text-color-white;
+    }
   }
 }
