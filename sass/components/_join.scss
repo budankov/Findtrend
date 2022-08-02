@@ -1,0 +1,32 @@
+.join {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  text-align: center;
+  background-color: $bcg-color-green;
+
+  // .join__title
+  &__title {
+    max-width: 820px;
+    margin: 0 auto 40px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 112%;  
+    text-align: center;
+    color: $text-color-black;
+  }
+
+  // .join__title--green
+  &__title--green {
+    color: $join-text-color;
+  }
+}
+
+.button-black--join {
+  transition: background-color $transition-duration;
+
+  &:focus, &:hover {
+    background-color: $bcg-color-white;
+    color: $text-color-black;
+    transition: color $transition-duration;
+  }
+}
