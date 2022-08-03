@@ -28,10 +28,10 @@
 }
 
 #gooey-button {
-  padding: 16px 32px;
+  padding: 12px 24px;
   font-family: $rubik-font;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 140%;
   border: none;
   border-radius: 40px;
@@ -39,6 +39,11 @@
   filter: url("#gooey");
   position: relative;
   background-color: $bcg-color-green;
+
+  @media screen and (min-width: 1310px) {
+    padding: 16px 32px;
+    font-size: 18px;
+  }
 }
 
 #gooey-button:focus {

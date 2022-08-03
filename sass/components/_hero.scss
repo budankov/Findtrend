@@ -14,11 +14,15 @@
 
 .hero-title {
   font-weight: 900;
-  font-size: 72px;
+  font-size: 36px;
   line-height: 112%;
   text-align: center;
   color: $text-color-white;
   margin-bottom: 24px;
+
+  @media screen and (min-width: 1310px) {
+    font-size: 72px;
+  }
 }
 
 .hero-text {
@@ -30,9 +34,16 @@
 
 .btn-hero-socmed {
   position: relative;
-  width: 1076px;
-  height: 178px;
   margin: 95px auto 0;
+
+  @media screen and (min-width: 179.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1310px) {
+    width: 1076px;
+    height: 178px;
+  }
 }
 
 .hero-img {
@@ -47,12 +58,15 @@
 }
 
 .hero-img__item--1 {
-  top: 25px;
   background: #181818;
   border: 1px solid #000000;
   transform: rotate(-4deg);
   z-index: 5;
   box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+
+  @media screen and (min-width: 1310px) {
+    top: 25px;
+  }
 }
 
 .hero-img__item--2 {

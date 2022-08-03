@@ -1,6 +1,25 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88px;
+  background-color: $bcg-color-black;
+  z-index: 200;
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+    height: 99px;
+  }
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 767.98px) {
+    padding: 24px 0;
+  }
 }
 
 .site-nav {
@@ -47,11 +66,25 @@
       color: $bcg-color-green;
     }
   }
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 }
 
 .btn-nav {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+  }
 }
 
 .login {
@@ -156,11 +189,19 @@
 }
 
 .button--white {
-  margin-left: 40px;
-  padding: 12px 32px;
+  padding: 8px 24px;
   background: $bcg-color-white;
 
   &:focus, &:hover {
     background-color: $bcg-color-green;
+  }
+
+  @media screen and (max-width: 999.98px) {
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding: 12px 32px;
+    margin-left: 40px;
   }
 }

@@ -3,8 +3,13 @@
 
   & .container-big {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+
+    @media screen and (min-width: 1310px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   // .footer__logo
@@ -30,18 +35,25 @@
 
 .footer-nav {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 1310px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   // .footer-nav__item
   &__item {
     @extend %list;
+
+    @media screen and (min-width: 1310px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
     
-    padding-top: 40px;
-    padding-bottom: 40px;
-  
-    &:not(:last-child) {
-      margin-right: 40px;
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
     }
   }
 
