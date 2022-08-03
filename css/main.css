@@ -18,7 +18,7 @@ body {
   font-size: 14px;
   line-height: 100%;
 }
-@media screen and (min-width: 1310px) {
+@media screen and (min-width: 1000px) {
   body {
     font-size: 18px;
   }
@@ -398,6 +398,15 @@ ol {
   margin-right: 10px;
 }
 
+.hero {
+  margin-top: 88px;
+}
+@media screen and (min-width: 1000px) {
+  .hero {
+    margin-top: 99px;
+  }
+}
+
 .container-hero {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -424,7 +433,7 @@ ol {
   color: #FFFFFF;
   margin-bottom: 24px;
 }
-@media screen and (min-width: 1310px) {
+@media screen and (min-width: 1000px) {
   .hero-title {
     font-size: 72px;
   }
@@ -518,10 +527,15 @@ ol {
 }
 .open__title {
   font-weight: 700;
-  font-size: 72px;
+  font-size: 36px;
   line-height: 1.194;
   text-align: center;
   color: #000000;
+}
+@media screen and (min-width: 1000px) {
+  .open__title {
+    font-size: 72px;
+  }
 }
 .open__subtitles {
   font-style: italic;
@@ -1060,7 +1074,7 @@ ol {
   position: relative;
   background-color: #A8FF35;
 }
-@media screen and (min-width: 1310px) {
+@media screen and (min-width: 1000px) {
   #gooey-button {
     padding: 16px 32px;
     font-size: 18px;

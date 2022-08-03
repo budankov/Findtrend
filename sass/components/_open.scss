@@ -7,10 +7,14 @@
   // .open__title
   &__title {
     font-weight: 700;
-    font-size: 72px;
+    font-size: 36px;
     line-height: 1.194; 
     text-align: center;
     color: $text-color-black;
+
+    @media screen and (min-width: 1000px) {
+      font-size: 72px;
+    }
   }
 
   // .open__subtitles
