@@ -14,12 +14,13 @@
   &__title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.194; 
+    line-height: 112%;
     text-align: center;
     color: $text-color-black;
 
     @media screen and (min-width: 1000px) {
       font-size: 72px;
+      line-height: 1.194;
     }
   }
 
@@ -41,12 +42,12 @@
       &--left {
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -10px;
       }
 
       &--right {
         position: absolute;
-        top: 0;
+        top: -15px;
         right: 0;
       }
     }
@@ -102,17 +103,15 @@
   margin-right: auto;
 
   @media screen and (min-width: 767.98px) {
-    flex-direction: row;
   }
 
-  @media screen and (max-width: 479.98px) {
-    width: 228px;
-    height: 140px;
+  @media screen and (max-width: 767.98px) {
     margin-top: 24px;
     margin-bottom: 24px;
   }
 
   @media screen and (min-width: 767.98px) {
+    flex-direction: row;
     width: 342px;
     height: 211px;
     margin-top: 34px;

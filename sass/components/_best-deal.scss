@@ -5,13 +5,17 @@
   // .best-deal__title
   &__title {
     font-weight: 700;
-    font-size: 64px;
+    font-size: 36px;
     line-height: 1.19;
     text-align: center;
     color: $text-color-white;
-    margin-bottom: 20px;
+    
+    @media screen and (min-width: 1000px) {
+      font-size: 64px;
+      line-height: 1.77;
+    }
   }
-}
+} 
 
 .best-deal {
 
@@ -20,28 +24,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 0;
+    margin-top: 32px;
+    margin-bottom: 80px;
+
+    @media screen and (min-width: 1000px) {
+      margin: 40px 0;
+    }
   }
 
   // .best-deal_monthly
   &_monthly {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.2;
     color: $text-color-white;
     margin-right: 24px;
+
+    @media screen and (min-width: 1000px) {
+      font-size: 24px;
+    }
   }
 
   // .best-deal_yearly
   &_yearly {
     display: flex;
+    flex-direction: column;
     align-items: center;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.2;
     color: $yearly-text-color;
-    margin-left: 24px;
-  }
+
+  @media screen and (max-width: 1000px) {
+      position: relative;
+      margin-left: 24px;
+    }
+
+    @media screen and (min-width: 1000px) {
+      flex-direction: row;
+      font-size: 24px;
+      margin-left: 24px;
+    }
+}
 
   // .best-deal_yearly--subtitles
   &_yearly--subtitles {
@@ -57,11 +81,23 @@
     color: $text-color-white;
     transform: rotate(6deg);
     margin-left: 24px;
+
+    @media screen and (max-width: 1000px) {
+      position: absolute;
+      flex-direction: column-reverse;
+      top: 32px;
+      right: 10px;
+    }
   }
 
   &_yearly--arrow {
     fill: $bcg-color-white;
     transform: rotate(107.94deg);
+
+    @media screen and (max-width: 1000px) {
+      margin-bottom: 5px;
+      transform: matrix(0.23, -0.97, -0.97, -0.23, 0, 0);
+    }
   }
 }
 
@@ -114,8 +150,13 @@
 
 .card-set {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 24px;
+
+  @media screen and (min-width: 1310px) {
+    gap: 40px;
+  }
 
   // .card-set__item
   &__item {
@@ -218,6 +259,10 @@
     background: $bcg-color-green;
     border: none;
     border-radius: 29px;
-    padding: 17px 79px;
+    padding: 14px 69px;
+
+    @media screen and (min-width: 1000px) {
+      padding: 17px 79px;
+    }
   }
 }

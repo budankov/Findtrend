@@ -1,36 +1,58 @@
 .platform-connect {
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: $bcg-color-grey;
   text-align: center;
+
+  @media screen and (min-width: 1000px) {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
 
   // .platform-connect__title
   &__title {
     font-weight: 700;
-    font-size: 64px;
-    line-height: 1.88;  
+    font-size: 36px;
+    line-height: 1.19;  
     text-align: center;
     color: $bcg-color-black;
-    margin-bottom: 80px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 1000px) {
+      font-size: 64px;
+      line-height: 1.88;
+      margin-bottom: 80px;
+    }
   }
 }
 
 .socials-platform {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 77px;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1000px) {
+    gap: 24px;
+    margin-bottom: 77px;
+  }
 
   // .socials-platform__item
   &__item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 124px;
-    height: 124px;
+    width: 64px;
+    height: 64px;
     background-color: $bcg-color-white;
     border-radius: 8px;
     transition: background-color $transition-duration, transform $transition-duration;
+
+    @media screen and (min-width: 1000px) {
+      width: 124px;
+      height: 124px;
+    }
 
     &:focus, &:hover {
       background-color: $bcg-color-green;
@@ -48,6 +70,13 @@
   // .socials-platform__icon
   &__icon {
     transition: transform $transition-duration;
+    width: 30px;
+    height: 30px;
+
+    @media screen and (min-width: 1000px) {
+      width: 60px;
+      height: 60px;
+    }
   }
 }
 
