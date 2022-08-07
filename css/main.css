@@ -2141,6 +2141,10 @@ ol {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
+  font-size: 14px;
+}
+.form__field--policy span {
+  color: black;
 }
 @media screen and (max-width: 1199.98px) {
   .form__field--policy {
