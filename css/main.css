@@ -442,9 +442,20 @@ ol {
 }
 
 .container-hero {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
+}
+@media screen and (max-width: 999px) {
+  .container-hero {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container-hero {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 }
 
 .hero-content-wrapper {
