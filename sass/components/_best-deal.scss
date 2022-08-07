@@ -189,10 +189,14 @@
 
   // .card-set__title
   &__title {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 100%;
     color: $text-color-black;
     padding-bottom: 8px;
+
+    @media screen and (min-width: 1000px) {
+      font-size: 36px;
+    }
   }
 
   // .card-set__text
@@ -219,11 +223,15 @@
 
   // .card-set__price
   &__price {
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 100%;
-  color: $text-color-black;
-  margin-top: 32px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    color: $text-color-black;
+    margin-top: 32px;
+
+    @media screen and (min-width: 1000px) {
+      font-size: 64px;
+    }
   }
 
   &__months {
